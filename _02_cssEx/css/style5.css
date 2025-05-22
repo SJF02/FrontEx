@@ -1,0 +1,17 @@
+p{
+    font-weight: bold;
+    font-style: italic;
+
+    /* color: transparent;
+    background-image: linear-gradient(to right, yellow, blue);
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+
+    &:hover {
+        text-shadow: 0 0 10px #ff0000,
+                    0 0 20px #ff0000,
+                    0 0 30px #ff8800;
+        transform: scale(1.05);
+    } */
+}
