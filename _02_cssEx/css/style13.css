@@ -1,7 +1,7 @@
 div{
     background-image: url(../images/bg-airplane.jpg);
     background-repeat: no-repeat;
-    background-size: cover; /*출력영역을 꽉채우는 것(비율유지, 일부손실가능성)*/
+    background-size: contain; /*이미지가 전체 포함(일부 여백)*/
     height: 100vh;
 }
 p{
