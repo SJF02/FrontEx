@@ -122,12 +122,18 @@ footer p{
 
 /* 기사 부분 */
 article{
-    width: 74%;
+    width: 60%;
+    order: 2;
 }
 
 /* 사이드바 */
 aside{
     width: 22%;
+    order: 3;
+}
+
+.ad{
+    order:1;
 }
 
 .news-contents{
