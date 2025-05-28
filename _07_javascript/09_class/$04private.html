@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Square{
+
+            // 필드나 메서드에 #을 붙이면 private
+            #length;        
+
+            constructor(length){
+                if(length <= 0)
+                    throw '길이는 0보다 커야 합니다.';  // 강제 예외 발생
+
+                this.#length = length;
+            }
+            getPerimeter(){
+                return 2 * (this.#length + this.#length);
+            }
+            getArea(){
+                return this.#length * this.#length;
+            }
+
+        }
+
+        const square = new Square(10);
+        console.log(square.length);         // 접근이 안된다.
+        console.log(square.getPerimeter());
+        console.log(square.getArea());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

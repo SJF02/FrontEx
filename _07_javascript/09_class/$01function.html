@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 클래스 역할을 대신하는 함수(생성자 함수)
+        const createStudent = function(name, kor, eng, math, sci){
+            return {
+                name: name,
+                kor: kor,
+                eng: eng,
+                math: math,
+                sci: sci,
+
+                getSum(){
+                    return this.kor + this.eng + this.math + this.sci;
+                },
+                getAverage(){
+                    return this.getSum()/4;
+                },
+                toString(){
+                    return `${this.name}\t${this.getSum()}점\t${this.getAverage()}점\n`;
+                }
+            }
+        }
+        
+        const students = [];
+        students.push(createStudent('Albert', 74, 88, 33, 100));
+        students.push(createStudent('Alex', 74, 22, 99, 100));
+        students.push(createStudent('James', 74, 88, 56, 100));
+        students.push(createStudent('Paul', 74, 88, 99, 90));
+
+        let output = '이름\t총점\t평균\n';
+        for(const s of students){
+            output += s;        // s.toString();
+        }
+        console.log(output);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
